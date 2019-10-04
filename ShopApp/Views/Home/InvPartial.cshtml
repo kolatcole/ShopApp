@@ -1,0 +1,23 @@
+﻿@model ShopApp.Models.Inv_Totals
+@{
+		ViewData["Title"] = "Partial Inventory";
+		
+	}
+<div class="row justify-content-end">
+	<div class="col col-lg-5 col-md-6 mt-5 cart-wrap ftco-animate">
+		<div class="cart-total mb-3">
+			<h3>Inventory Totals</h3>
+			<p class="d-flex">
+				<span>Total Quantity</span>
+				<span><input asp-for="TotalQty" name="sub" id="sub" disabled="disabled" /></span>
+			</p>
+
+			<p class="d-flex">
+				<span>Total Amount </span>
+				<span><input asp-for="TotalAmt" name="discount" id="discount" disabled="disabled" /></span>
+			</p>
+			
+		</div>
+		
+	</div>
+</div>

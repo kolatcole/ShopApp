@@ -1,0 +1,30 @@
+﻿@model ShopApp.Models.Cart_Totals
+@*@{
+	ViewData["Title"] = "Cart";
+	Layout = "~/Views/Shared/_myLayout.cshtml";
+}*@
+
+<div class="row justify-content-end">
+	<div class="col col-lg-5 col-md-6 mt-5 cart-wrap ftco-animate">
+		<div class="cart-total mb-3">
+			<h3>Cart Totals</h3>
+			<p class="d-flex">
+				<span>Subtotal</span>
+				<span><input asp-for="subTotal" name="sub" id="sub" disabled="disabled" /></span>
+			</p>
+			
+			<p class="d-flex">
+				<span>Discount</span>
+				<span><input asp-for="discount" name="discount" id="discount" disabled="disabled" /></span>
+			</p>
+			<hr>
+			<p class="d-flex total-price">
+				<span>Total</span>
+				<span><input asp-for="Total" name="realtotal" id="realtotal" disabled="disabled" /></span>
+			</p>
+		</div>
+		<p class="text-center"><a href="checkout.html" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
+	</div>
+</div>
+
+

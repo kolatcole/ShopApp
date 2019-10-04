@@ -1,0 +1,66 @@
+﻿@model ShopApp.Models.Product
+
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_myLayout.cshtml";
+}
+
+<h2>Add</h2>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Add">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Total" class="control-label"></label>
+                <input asp-for="Total" class="form-control" />
+                <span asp-validation-for="Total" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhotoPath" class="control-label"></label>
+                <input asp-for="PhotoPath" class="form-control" />
+                <span asp-validation-for="PhotoPath" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Small" class="control-label"></label>
+                <input asp-for="Small" class="form-control" />
+                <span asp-validation-for="Small" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Large" class="control-label"></label>
+                <input asp-for="Large" class="form-control" />
+                <span asp-validation-for="Large" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extra" class="control-label"></label>
+                <input asp-for="Extra" class="form-control" />
+                <span asp-validation-for="Extra" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Medium" class="control-label"></label>
+                <input asp-for="Medium" class="form-control" />
+                <span asp-validation-for="Medium" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
